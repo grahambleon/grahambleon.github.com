@@ -5,21 +5,24 @@ sup beetches
 
 <html>
 <head>
-    <title>Space Clicker</title>
+<script>
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+</script>
 </head>
-
 <body>
-    <script type="text/javascript">
-    var clicks = 0;
-    function onClick() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    };
-    </script>
-    <button type="button" onClick="onClick()">Click if you think ross is sucks</button>
-    <p>Clicks: <a id="clicks">0</a></p>
-
-</body></html>
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
 
 <iframe width="1" height="1" src="http://www.youtube.com/embed/oHg5SJYRHA0?autoplay=1" frameborder="0" allowfullscreen></iframe>
 
@@ -30,6 +33,3 @@ sup double beetches
 <br>
  haha
 <marquee scrollamount="40"> ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go ready go </marquee>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Roswell_Gilpatric.PNG" title="not me" alt="sup bro" style="width:304px;height:228px;">
-
